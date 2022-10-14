@@ -1,0 +1,30 @@
+Source: node-jake
+Section: devel
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Laszlo Boszormenyi (GCS) <gcs@debian.org>,
+ David Paleino <dapal@debian.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://github.com/mde/jake
+Rules-Requires-Root: no
+
+Package: node-jake
+Architecture: all
+Depends:
+ ${misc:Depends},
+ nodejs (>= 0.6.19~dfsg1-3~),
+ node-minimatch,
+ node-utilities
+Recommends:
+ coffeescript
+ , node-glob
+Description: JavaScript build tool for Node.js
+ Jake is a JavaScript build tool for the Node.js framework, with
+ capabilities similar to the regular make or rake commands.
+ .
+ Jake has the following features:
+  - Jakefiles are in standard JavaScript syntax
+  - tasks with prerequisites
+  - namespaces for tasks
+  - async task execution

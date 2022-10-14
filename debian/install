@@ -1,0 +1,3 @@
+bin/cli.js	usr/bin/
+lib/*		usr/lib/nodejs/jake/
+package.json	usr/lib/nodejs/jake/

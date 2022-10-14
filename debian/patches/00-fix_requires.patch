@@ -1,0 +1,53 @@
+Description: fix requires
+ Use full paths, not relative ones.
+Author: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Last-Update: 2013-08-24
+
+---
+
+--- node-jake-0.6.10.orig/bin/cli.js
++++ node-jake-0.6.10/bin/cli.js
+@@ -18,7 +18,7 @@
+ */
+ 
+ // Load `jake` global
+-require('../lib/jake');
++require('jake');
+ 
+ var args = process.argv.slice(2);
+ 
+--- node-jake-0.6.10.orig/lib/jake.js
++++ node-jake-0.6.10/lib/jake.js
+@@ -32,7 +32,7 @@ var fs = require('fs')
+   , utils = require('./utils')
+   , Program = require('./program').Program
+   , Loader = require('./loader').Loader
+-  , pkg = JSON.parse(fs.readFileSync(__dirname + '/../package.json').toString());
++  , pkg = JSON.parse(fs.readFileSync(__dirname + '/package.json').toString());
+ 
+ var MAX_RULE_RECURSION_LEVEL = 16;
+ 
+--- node-jake-0.6.10.orig/lib/task/file_task.js
++++ node-jake-0.6.10/lib/task/file_task.js
+@@ -3,7 +3,7 @@ var fs = require('fs')
+   , FileTask
+   , FileBase
+   , DirectoryTask
+-  , utils = require('../utils');
++  , utils = require('jake/utils');
+ 
+ FileBase = new (function () {
+   var isFileOrDirectory = function (t) {
+--- node-jake-0.6.10.orig/lib/task/task.js
++++ node-jake-0.6.10/lib/task/task.js
+@@ -3,8 +3,8 @@ var util = require('util') // Native Nod
+   , EventEmitter = require('events').EventEmitter
+   , Task
+   , TaskBase
+-  , utils = require('../utils')
+-  , rule = require('../rule');
++  , utils = require('jake/utils')
++  , rule = require('jake/rule');
+ 
+ var UNDEFINED_VALUE;
+ 

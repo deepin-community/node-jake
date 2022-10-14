@@ -1,0 +1,101 @@
+node-jake (0.7.9-2) unstable; urgency=medium
+
+  * Update nodejs install path.
+  * Update packaging bits.
+  * Update debhelper level to 13 .
+  * Update Standards-Version to 4.5.1:
+    - change package priority to optional.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 31 Dec 2020 17:42:23 +0100
+
+node-jake (0.7.9-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 02:26:33 +0100
+
+node-jake (0.7.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 22 Mar 2014 15:32:45 +0100
+
+node-jake (0.7.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update watch file.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 17 Feb 2014 14:17:26 +0000
+
+node-jake (0.7.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.9.5 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Fri, 15 Nov 2013 13:01:53 +0000
+
+node-jake (0.7.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 30 Sep 2013 19:24:53 +0200
+
+node-jake (0.6.12-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 16 Sep 2013 13:40:43 +0200
+
+node-jake (0.6.10-1) unstable; urgency=low
+
+  * New upstream release (closes: #719373).
+  * New maintainer, but leave David in for now.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 24 Aug 2013 21:15:24 +0200
+
+node-jake (0.2.32-2) unstable; urgency=low
+
+  * Migrate from node to nodejs (Closes: #686891)
+  * Standards-Version bump to 3.9.4, no changes needed
+
+ -- David Paleino <dapal@debian.org>  Thu, 20 Sep 2012 12:09:59 +0200
+
+node-jake (0.2.32-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- David Paleino <dapal@debian.org>  Sun, 08 Apr 2012 22:25:07 +0200
+
+node-jake (0.2.31-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- David Paleino <dapal@debian.org>  Sun, 25 Mar 2012 12:41:16 +0200
+
+node-jake (0.2.28-1) unstable; urgency=low
+
+  * New upstream version
+  * Standards-Version bump to 3.9.3, no changes needed
+  * Update debian/copyright
+
+ -- David Paleino <dapal@debian.org>  Thu, 22 Mar 2012 21:57:30 +0100
+
+node-jake (0.1.22-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- David Paleino <dapal@debian.org>  Sat, 31 Dec 2011 12:02:37 +0100
+
+node-jake (0.1.19-2) unstable; urgency=low
+
+  * Fixed one require in program.js
+  * Added dependencies on coffeescript and node-glob
+
+ -- David Paleino <dapal@debian.org>  Sat, 29 Oct 2011 01:53:44 +0200
+
+node-jake (0.1.19-1) unstable; urgency=low
+
+  * Initial release
+
+ -- David Paleino <dapal@debian.org>  Sat, 29 Oct 2011 01:06:01 +0200
